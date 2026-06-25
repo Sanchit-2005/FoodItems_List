@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <h1 >QuikFood</h1>
+   <h2>Items List</h2>
+   <div class="items">
+      <% for(let i=0;i<foods.length;i++){ %>
+        <div class="item">
+            <img src="/<%= foods[i].photo %>" alt="<%= foods[i].name %>">
+            <div class="content">
+                     <h3><%= foods[i].name %></h3>
+             <p>Price: <%= foods[i].price %></p>
+             <% if(foods[i].available){%>
+                <p class="green">Available</p>
+             <% }else{ %>
+                <p class="red">Unavailable </p>
+                <% } %>
+            </div>
+             
+
+      </div>
+      <% } %>
+   </div>
+
+   <form action="/food/new" method="get">
+              <button>Add Item </button>
+       </form>
+
+  
+   
+</body>
+</html>
