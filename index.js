@@ -135,6 +135,12 @@ app.post("/foods", upload.single("photo"), (req, res) => {
   res.redirect("/foodList");
 });
 
+app.get("/food/:id",(req,res)=>{
+  let {id}=req.params;
+  let item =foods.find((p)=>id===p.id);
+  res.render("detail",{item});
+})
+
 app.listen(port, () => {
   console.log("listing  you bro ");
 });
