@@ -1,0 +1,59 @@
+[
+  {
+    "id": "fc30a2f6-853e-4dbc-a14b-1f4cc1c9d1d1",
+    "name": "Veg Burger",
+    "photo": "VegBurger.jpg",
+    "price": 120,
+    "category": "Burger",
+    "available": true,
+    "rating": 4.3,
+    "description": "Crispy veg patty with cheese and fresh vegetables."
+  },
+  {
+    "id": "ab4a6c26-1aef-4c98-b74f-0abf5c30e5b0",
+    "name": "Paneer Pizza",
+    "photo": "PaneerPizza.jpg",
+    "price": 349,
+    "category": "Pizza",
+    "available": true,
+    "rating": 4.7,
+    "description": "Loaded with paneer, capsicum, onion, and mozzarella cheese."
+  },
+  {
+    "id": "a84d3cbb-39f0-4733-9f95-2d8da70d19b8",
+    "name": "Veg Biryani",
+    "photo": "VegBiryani.jpg",
+    "price": 199,
+    "category": "Rice",
+    "available": true,
+    "rating": 4.5,
+    "description": "Aromatic basmati rice served with spicy vegetables and raita."
+  },
+  {
+    "id": "206fa612-29d4-44d8-8a2d-d5ed9fd5a11f",
+    "name": "Cold Coffee",
+    "photo": "ColdCoffee.jpg",
+    "price": 99,
+    "category": "Beverage",
+    "available": false,
+    "rating": 4.2,
+    "description": "Chilled creamy coffee topped with chocolate syrup."
+  },
+  {
+    "id": "22458c06-64c0-4a75-b3b1-8adf8d0e0d9d",
+    "name": "Chocolate Brownie",
+    "photo": "ChocolateBrownie.jpg",
+    "price": 149,
+    "category": "Dessert",
+    "available": true,
+    "rating": 4.8,
+    "description": "Warm chocolate brownie served with vanilla ice cream."
+  },
+  {
+    "id": "9646cbc1-734f-4ca0-90f5-bbf2f5008834",
+    "name": "gulab jamun ",
+    "photo": "1782465932820-samosa.jpg",
+    "price": "100",
+    "available": true
+  }
+]
