@@ -3,9 +3,9 @@
     "id": "fc30a2f6-853e-4dbc-a14b-1f4cc1c9d1d1",
     "name": "Veg Burger",
     "photo": "VegBurger.jpg",
-    "price": 120,
+    "price": "120",
     "category": "Burger",
-    "available": true,
+    "available": false,
     "rating": 4.3,
     "description": "Crispy veg patty with cheese and fresh vegetables."
   },
@@ -21,9 +21,9 @@
   },
   {
     "id": "a84d3cbb-39f0-4733-9f95-2d8da70d19b8",
-    "name": "Veg Biryani",
-    "photo": "VegBiryani.jpg",
-    "price": 199,
+    "name": "Hydrabadi Biryani",
+    "photo": "1782475996056-crispy-chicken-biryanigraphy-served-in-classic-indian-plate-style-photo.jpg",
+    "price": "250",
     "category": "Rice",
     "available": true,
     "rating": 4.5,
@@ -33,9 +33,9 @@
     "id": "206fa612-29d4-44d8-8a2d-d5ed9fd5a11f",
     "name": "Cold Coffee",
     "photo": "ColdCoffee.jpg",
-    "price": 99,
+    "price": "99",
     "category": "Beverage",
-    "available": false,
+    "available": true,
     "rating": 4.2,
     "description": "Chilled creamy coffee topped with chocolate syrup."
   },
@@ -61,6 +61,7 @@
     "name": "samosa+ chai",
     "photo": "1782469045063-prajakta-bagade-Vzvkp94lk_4-unsplash.jpg",
     "price": "50",
-    "available": true
+    "available": false,
+    "category": ""
   }
 ]

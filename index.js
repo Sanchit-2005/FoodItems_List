@@ -22,7 +22,7 @@ const { v4: uuidv4 } = require("uuid");
 const methodOverride = require('method-override');
 app.use(methodOverride('_method'));
 
-// Configure multer for file uploads
+// Configure multer for file uploads        -He pn nhi mahit mla 
 const storage = multer.diskStorage({
   destination: (req, file, cb) => {
     cb(null, path.join(__dirname, "public"));
@@ -45,7 +45,8 @@ function loadFoods() {
   }
   return [];
 }
-
+// (savefood)function  he mahit nahi he shikaycch  aahe ,not know the implemetation pan to save karto edited info aani new item  ,so that server close kelyavr suddha 
+// edited aani new item rahayla pahije 
 function saveFoods(items) {
   try {
     fs.writeFileSync(dataPath, JSON.stringify(items, null, 2), "utf8");
@@ -159,15 +160,23 @@ app.patch("/foods/:id",upload.single("photo"),(req,res)=>{
      console.log("received the request ")
      let {id}=req.params;
      let { name, price, category } = req.body;
+      let available=req.body.available==="on";
      
      let item =foods.find((p)=> id===p.id);
       item.name=name;
       item.price=price;
       item.category=category;
+      item.available=available;
+
+     
 
       if(req.file){
         item.photo=req.file.filename;
       }
+
+
+
+         saveFoods(foods); 
      res.redirect("/foodList")
 })
 
