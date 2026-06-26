@@ -55,5 +55,12 @@
     "photo": "1782465932820-samosa.jpg",
     "price": "100",
     "available": true
+  },
+  {
+    "id": "c9e5ae53-fa9d-45ec-b387-cc06c71152de",
+    "name": "samosa+ chai",
+    "photo": "1782469045063-prajakta-bagade-Vzvkp94lk_4-unsplash.jpg",
+    "price": "50",
+    "available": true
   }
 ]
