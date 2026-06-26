@@ -159,7 +159,7 @@ app.patch("/foods/:id",upload.single("photo"),(req,res)=>{
      console.log(req.body);
      console.log("received the request ")
      let {id}=req.params;
-     let { name, price, category } = req.body;
+     let { name, price, category, description,rating} = req.body;
       let available=req.body.available==="on";
      
      let item =foods.find((p)=> id===p.id);
@@ -167,6 +167,8 @@ app.patch("/foods/:id",upload.single("photo"),(req,res)=>{
       item.price=price;
       item.category=category;
       item.available=available;
+      item.description= description;
+      item.rating=rating;
 
      
 
@@ -180,6 +182,14 @@ app.patch("/foods/:id",upload.single("photo"),(req,res)=>{
      res.redirect("/foodList")
 })
 
+
+app.delete("/foods/:id" ,(req,res)=>{
+  let {id}=req.params;
+  foods=foods.filter((p)=>id!=p.id);
+  console.log("deleted the item ");
+  saveFoods(foods); 
+  res.redirect("/foodList");
+})
 app.listen(port, () => {
   console.log("listing  you bro ");
 });

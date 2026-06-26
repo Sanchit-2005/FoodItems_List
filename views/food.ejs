@@ -23,7 +23,10 @@
                 <% } %>
                 <a href="http://localhost:8080/food/<%=foods[i].id%>">See in detail </a> <br> <br>
                 <a href="http://localhost:8080/food/edit/<%=foods[i].id%>">Edit  </a>
-                
+                <form action="/foods/<%=foods[i].id%>?_method=DELETE" method="POST">
+                    <br>
+                    <button type="submit" class="del">Delete</button>
+                </form>
             </div>
              
 

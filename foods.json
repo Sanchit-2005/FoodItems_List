@@ -5,8 +5,8 @@
     "photo": "VegBurger.jpg",
     "price": "120",
     "category": "Burger",
-    "available": false,
-    "rating": 4.3,
+    "available": true,
+    "rating": "4.3",
     "description": "Crispy veg patty with cheese and fresh vegetables."
   },
   {
@@ -30,38 +30,33 @@
     "description": "Aromatic basmati rice served with spicy vegetables and raita."
   },
   {
-    "id": "206fa612-29d4-44d8-8a2d-d5ed9fd5a11f",
-    "name": "Cold Coffee",
-    "photo": "ColdCoffee.jpg",
-    "price": "99",
-    "category": "Beverage",
-    "available": true,
-    "rating": 4.2,
-    "description": "Chilled creamy coffee topped with chocolate syrup."
-  },
-  {
     "id": "22458c06-64c0-4a75-b3b1-8adf8d0e0d9d",
     "name": "Chocolate Brownie",
     "photo": "ChocolateBrownie.jpg",
-    "price": 149,
+    "price": "149",
     "category": "Dessert",
-    "available": true,
-    "rating": 4.8,
+    "available": false,
+    "rating": "4.8",
     "description": "Warm chocolate brownie served with vanilla ice cream."
   },
   {
-    "id": "9646cbc1-734f-4ca0-90f5-bbf2f5008834",
-    "name": "gulab jamun ",
-    "photo": "1782465932820-samosa.jpg",
-    "price": "100",
-    "available": true
+    "id": "98d6d8c2-6706-4405-a71a-9cf433715b14",
+    "name": "Basundi ",
+    "photo": "1782480552353-images.jpg",
+    "price": "50",
+    "available": true,
+    "category": "sweet",
+    "description": "Very tasty",
+    "rating": "5"
   },
   {
-    "id": "c9e5ae53-fa9d-45ec-b387-cc06c71152de",
-    "name": "samosa+ chai",
-    "photo": "1782469045063-prajakta-bagade-Vzvkp94lk_4-unsplash.jpg",
-    "price": "50",
-    "available": false,
-    "category": ""
+    "id": "0d962750-5612-4ce0-a8dd-719953087c18",
+    "name": "Gulab jamun ",
+    "photo": "1782483882732-Gulab-Jamun-with-Milk-Powder.jpg",
+    "price": "99",
+    "available": true,
+    "category": "sweet",
+    "description": "",
+    "rating": ""
   }
 ]

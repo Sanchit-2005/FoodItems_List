@@ -74,3 +74,12 @@ button{
     
     text-align: center;
 }
+
+.del{
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px 20px;
+}
