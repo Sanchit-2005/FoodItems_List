@@ -5,6 +5,8 @@ const app = express();
 const port = 8080;
 const path = require("path");
 
+
+
 const dataPath = path.join(__dirname, "foods.json");
 
 app.use(express.urlencoded({ extended: true }));
@@ -16,6 +18,9 @@ app.set("views", path.join(__dirname, "views"));
 app.use(express.static(path.join(__dirname, "public")));
 
 const { v4: uuidv4 } = require("uuid");
+
+const methodOverride = require('method-override');
+app.use(methodOverride('_method'));
 
 // Configure multer for file uploads
 const storage = multer.diskStorage({
@@ -139,6 +144,31 @@ app.get("/food/:id",(req,res)=>{
   let {id}=req.params;
   let item =foods.find((p)=>id===p.id);
   res.render("detail",{item});
+})
+
+
+app.get("/food/edit/:id",(req,res)=>{
+  let {id}=req.params;
+  let item=foods.find((p)=>id===p.id);
+
+  res.render("edit",{item});
+})
+
+app.patch("/foods/:id",upload.single("photo"),(req,res)=>{
+     console.log(req.body);
+     console.log("received the request ")
+     let {id}=req.params;
+     let { name, price, category } = req.body;
+     
+     let item =foods.find((p)=> id===p.id);
+      item.name=name;
+      item.price=price;
+      item.category=category;
+
+      if(req.file){
+        item.photo=req.file.filename;
+      }
+     res.redirect("/foodList")
 })
 
 app.listen(port, () => {
